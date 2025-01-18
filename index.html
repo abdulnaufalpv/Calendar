@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Calendar</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="calendar">
+        <div class="calendar-header">
+            <span class="nav prev" onclick="prevMonth()">&#10094;</span>
+            <h2 id="monthYear"></h2>
+            <span class="nav next" onclick="nextMonth()">&#10095;</span>
+        </div>
+        <div class="calendar-body">
+            <div class="current-date" id="currentDate"></div>
+            <table id="calendarTable">
+                <thead>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
